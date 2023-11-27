@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PPGPIT Jemaat Sirande</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: white;
+            color: black;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-image: url(bg1.jpg);
+            background-size: cover;
+            background-position: center;
+            height: 300px; 
+            color: black; 
+            text-align: right;
+            padding: 50px; 
+            box-sizing: border-box;
+			font-size: 25px;
+        }
+
+       
+
+        nav {
+            background-color: black;
+            color: white;
+            padding: 10px;
+            text-align: center;
+        }
+
+        section {
+            padding: 20px;
+        }
+
+        footer {
+            background-color: black;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+
+        /* Added style for navigation buttons */
+        nav a {
+            margin: 0 10px;
+            color: white;
+            text-decoration: none;
+        }
+		.header-image {
+            position: absolute;
+            top: 8%; /* Adjust this value to vertically center the image */
+            right: 300px; /* Adjust this value to set the distance from the right */
+            transform: translateY(-50%);
+            width: 70px; /* Set the width of your image */
+            height: auto;
+        }
+		img {
+    max-width: 100%;
+    height: auto;
+	
+}
+
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <img src=logo.jpg alt="Header Image" class="header-image"> <!-- Replace 'path/to/your/header-image.jpg' with the actual path to your header image -->
+        <h1>PPGPIT Jemaat Sirande</h1>
+        
+    </header>
+
+    <!-- Navigation Buttons -->
+    <nav>
+        <a href="home.html">Home</a>
+        <a href="pengurus.html">Pengurus Inti</a>
+        <a href="anggota.html">Anggota</a>
+        <a href="album.html">Album Pemuda</a>
+        <a href="pengumuman.html">Pengumuman</a>
+    </nav>
+    
+    
+    
+    <section>
+        <h2>Riwayat Kegiatan</h2>
+
+    <section>
+       
+        <div class="event" onclick="redirectToEvent('ibadahpadang.html')">
+            <img srcset=ibp6.jpg 50w        
+            sizes= 10px 
+            src=ibp6.jpg alt="Ibadah Pdang Image">
+            <h2>Ibadah Padang</h2>
+            <p>17 November 2023</p>
+        </div>
+		<div class="event" onclick="redirectToEvent('posta2023.html')">
+            <img src="path/to/event1-image.jpg" alt="Posta2023 Image">
+            <h2>Posta 2023</h2>
+            <p>Februari 2023</p>
+        </div>
+		</section>
+
+    <script>
+        function redirectToEvent(eventPage) {
+            // Redirect to the clicked event page
+            window.location.href = eventPage;
+        }
+    </script>
+
+    <footer>
+        © 2023 PPGPIT Jemaat Sirande
+        <a href="https://wa.me/+6285222771397">Contact</a> | 
+        <a href="https://www.facebook.com/groups/1656783574563550/?ref=share&mibextid=NSMWBT" target="_blank">Facebook</a>
+    </footer>
+
+</body>
+
+</html>
